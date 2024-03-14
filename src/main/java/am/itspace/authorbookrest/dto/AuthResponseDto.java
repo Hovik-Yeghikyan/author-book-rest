@@ -1,6 +1,5 @@
 package am.itspace.authorbookrest.dto;
 
-import am.itspace.authorbookrest.entity.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,11 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class AuthorResponseDto {
+public class AuthResponseDto {
 
-    private int id;
-    private String firstName;
-    private String surname;
-    private Gender gender;
-    private int age;
+    private String token;
+    private UserDto userDto;
 }
