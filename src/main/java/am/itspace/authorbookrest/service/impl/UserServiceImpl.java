@@ -22,8 +22,8 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
-//    @Value("${upload.image.path}")
-//    private String uploadImagePath;
+    @Value("${upload.image.path}")
+    private String uploadImagePath;
 
 
     @Override
@@ -39,19 +39,19 @@ public class UserServiceImpl implements UserService {
                 .orElse(null);
     }
 
-//    @Override
-//    public User findById(int id) {
-//        return userRepository.findById(id)
-//                .orElse(null);
-//    }
+    @Override
+    public User findById(int id) {
+        return userRepository.findById(id)
+                .orElse(null);
+    }
 
-//    @Override
-//    public void uploadImage(User user, MultipartFile multipartFile) throws IOException {
-//        if (multipartFile != null && !multipartFile.isEmpty()) {
-//            String fileName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
-//            multipartFile.transferTo(new File(uploadImagePath, fileName));
-//            user.setImagePath(fileName);
-//            userRepository.save(user);
-//        }
-//    }
+    @Override
+    public void uploadImage(User user, MultipartFile multipartFile) throws IOException {
+        if (multipartFile != null && !multipartFile.isEmpty()) {
+            String fileName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
+            multipartFile.transferTo(new File(uploadImagePath, fileName));
+            user.setImagePath(fileName);
+            userRepository.save(user);
+        }
+    }
 }

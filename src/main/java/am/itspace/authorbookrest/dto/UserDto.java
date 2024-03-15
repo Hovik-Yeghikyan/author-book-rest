@@ -15,5 +15,6 @@ public class UserDto {
     private String surname;
     private String email;
     private UserType userType;
+    private String imagePath;
 }
 
