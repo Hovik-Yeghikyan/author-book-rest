@@ -26,7 +26,7 @@ public class CountriesEndpoint {
     @GetMapping
     public ResponseEntity<List<CountryInfo>> getAllCountries() {
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add("X-RapidAPI-Key", "d6f1684676mshf0cea19e6e9a00bp16268djsn8af14d6ff35f");
+        httpHeaders.add("X-RapidAPI-Key", "aaaa");
         httpHeaders.add("X-RapidAPI-Host", "geography4.p.rapidapi.com");
 
         HttpEntity httpEntity = new HttpEntity(null, httpHeaders);
