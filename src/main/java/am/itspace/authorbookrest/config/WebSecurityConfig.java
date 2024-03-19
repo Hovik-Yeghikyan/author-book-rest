@@ -34,6 +34,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests()
                 .requestMatchers("/swagger-ui/**").permitAll()
                 .requestMatchers("/v3/api-docs/**").permitAll()
+                //.requestMatchers("/countries").permitAll()
                 .requestMatchers("/v1/users").permitAll()
                 .requestMatchers(HttpMethod.POST,"/v1/users/image/**").permitAll()
                 .requestMatchers("/v1/users/getImage/**").permitAll()
