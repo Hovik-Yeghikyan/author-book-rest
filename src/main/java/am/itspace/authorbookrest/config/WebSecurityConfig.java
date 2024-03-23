@@ -36,6 +36,7 @@ public class WebSecurityConfig {
                 .requestMatchers("/v3/api-docs/**").permitAll()
                 //.requestMatchers("/countries").permitAll()
                 .requestMatchers("/v1/users").permitAll()
+                .requestMatchers("/v1/books").permitAll()
                 .requestMatchers(HttpMethod.POST,"/v1/users/image/**").permitAll()
                 .requestMatchers("/v1/users/getImage/**").permitAll()
                 .requestMatchers("/v1/users/auth").permitAll()

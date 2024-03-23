@@ -18,4 +18,5 @@ public class BookDto {
     private double price;
     private double priceUSD;
     private AuthorResponseDto authorResponseDto;
+
 }
