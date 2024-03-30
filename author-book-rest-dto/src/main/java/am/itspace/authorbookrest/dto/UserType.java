@@ -1,4 +1,4 @@
-package am.itspace.authorbookrest.entity;
+package am.itspace.authorbookrest.dto;
 
 public enum UserType {
     USER,

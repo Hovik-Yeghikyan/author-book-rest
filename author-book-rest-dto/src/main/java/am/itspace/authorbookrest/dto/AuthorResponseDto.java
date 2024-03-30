@@ -1,6 +1,6 @@
 package am.itspace.authorbookrest.dto;
 
-import am.itspace.authorbookrest.entity.Gender;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

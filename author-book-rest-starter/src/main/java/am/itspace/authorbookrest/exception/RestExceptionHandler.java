@@ -1,6 +1,7 @@
 package am.itspace.authorbookrest.exception;
 
 import am.itspace.authorbookrest.dto.ExceptionResponseDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -18,13 +19,14 @@ import java.util.List;
 import java.util.Map;
 
 @ControllerAdvice
+@Slf4j
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value
             = {IllegalArgumentException.class, IllegalStateException.class})
     protected ResponseEntity<Object> handleConflict(
             RuntimeException ex, WebRequest request) {
-
+        log.error(ex.getMessage(), ex);
         ExceptionResponseDto responseDto = ExceptionResponseDto.builder()
                 .message(ex.getMessage())
                 .status(HttpStatus.BAD_REQUEST.value())

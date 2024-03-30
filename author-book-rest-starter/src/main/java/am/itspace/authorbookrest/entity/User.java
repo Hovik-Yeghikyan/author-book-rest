@@ -1,5 +1,6 @@
 package am.itspace.authorbookrest.entity;
 
+import am.itspace.authorbookrest.dto.UserType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

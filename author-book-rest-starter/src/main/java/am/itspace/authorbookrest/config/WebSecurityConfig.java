@@ -1,6 +1,7 @@
 package am.itspace.authorbookrest.config;
 
-import am.itspace.authorbookrest.entity.UserType;
+
+import am.itspace.authorbookrest.dto.UserType;
 import am.itspace.authorbookrest.security.JWTAuthenticationTokenFilter;
 import am.itspace.authorbookrest.security.JwtAuthenticationEntryPoint;
 import lombok.RequiredArgsConstructor;

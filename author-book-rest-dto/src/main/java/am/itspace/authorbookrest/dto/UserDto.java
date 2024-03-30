@@ -1,6 +1,5 @@
 package am.itspace.authorbookrest.dto;
-import am.itspace.authorbookrest.entity.Gender;
-import am.itspace.authorbookrest.entity.UserType;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
